@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<boxOfficeResult xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dailyBoxOfficeList>
+		<dailyBoxOffice>
+			<rank>1</rank>
+			<rankOldAndNew>OLD</rankOldAndNew>
+			<movieNm>곤지암</movieNm>
+			<openDt>2018-03-28</openDt>
+			<salesAcc>4246112463</salesAcc>
+			<audiAcc>570156</audiAcc>
+		</dailyBoxOffice>
+		<dailyBoxOffice>
+			<rank>2</rank>
+			<rankOldAndNew>OLD</rankOldAndNew>
+			<movieNm>레디 플레이어 원</movieNm>
+			<openDt>2018-03-28</openDt>
+			<salesAcc>3081047412</salesAcc>
+			<audiAcc>379638</audiAcc>
+		</dailyBoxOffice>
+		<dailyBoxOffice>
+			<rank>3</rank>
+			<rankOldAndNew>OLD</rankOldAndNew>
+			<movieNm>7년의 밤</movieNm>
+			<openDt>2018-03-28</openDt>
+			<salesAcc>1681360863</salesAcc>
+			<audiAcc>242630</audiAcc>
+		</dailyBoxOffice>
+		<dailyBoxOffice>
+			<rank>4</rank>
+			<rankOldAndNew>OLD</rankOldAndNew>
+			<movieNm>지금 만나러 갑니다</movieNm>
+			<openDt>2018-03-14</openDt>
+			<salesAcc>16944507381</salesAcc>
+			<audiAcc>2121843</audiAcc>
+		</dailyBoxOffice>
+		<dailyBoxOffice>
+			<rank>5</rank>
+			<rankOldAndNew>OLD</rankOldAndNew>
+			<movieNm>퍼시픽 림: 업라이징</movieNm>
+			<openDt>2018-03-21</openDt>
+			<salesAcc>8319923917</salesAcc>
+			<audiAcc>996404</audiAcc>
+		</dailyBoxOffice>
+		<dailyBoxOffice>
+			<rank>6</rank>
+			<rankOldAndNew>OLD</rankOldAndNew>
+			<movieNm>콜 미 바이 유어 네임</movieNm>
+			<openDt>2018-03-22</openDt>
+			<salesAcc>876072900</salesAcc>
+			<audiAcc>106516</audiAcc>
+		</dailyBoxOffice>
+		<dailyBoxOffice>
+			<rank>7</rank>
+			<rankOldAndNew>OLD</rankOldAndNew>
+			<movieNm>리틀 포레스트</movieNm>
+			<openDt>2018-02-28</openDt>
+			<salesAcc>11805074985</salesAcc>
+			<audiAcc>1489774</audiAcc>
+		</dailyBoxOffice>
+		<dailyBoxOffice>
+			<rank>8</rank>
+			<rankOldAndNew>TRUE</rankOldAndNew>
+			<movieNm>막달라 마리아: 부활의 증인</movieNm>
+			<openDt>2018-03-28</openDt>
+			<salesAcc>53389000</salesAcc>
+			<audiAcc>7972</audiAcc>
+		</dailyBoxOffice>
+		<dailyBoxOffice>
+			<rank>9</rank>
+			<rankOldAndNew>OLD</rankOldAndNew>
+			<movieNm>소공녀</movieNm>
+			<openDt>2018-03-22</openDt>
+			<salesAcc>286018100</salesAcc>
+			<audiAcc>36287</audiAcc>
+		</dailyBoxOffice>
+		<dailyBoxOffice>
+			<rank>10</rank>
+			<rankOldAndNew>TRUE</rankOldAndNew>
+			<movieNm>쓰리 빌보드</movieNm>
+			<openDt>2018-03-15</openDt>
+			<salesAcc>700281100</salesAcc>
+			<audiAcc>85239</audiAcc>
+		</dailyBoxOffice>
+	</dailyBoxOfficeList>
+</boxOfficeResult>
