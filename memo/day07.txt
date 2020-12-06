@@ -1,0 +1,20 @@
+calendar에 생일표시 > xml books > jsp day07_xml > 
+
+
+DocumentBuilderFactory : xml에서 특정 태그를 뽑아올수 있게 미리 만들어준거.
+
+===========================
+
+//<name></name> 안에 있는 값들이 node, element라고 불러.
+<book></book> 이 사이도 똑같아
+
+=============================
+
+<td><%=myFormat(String.valueOf(p.get("audiAcc"))) %></td>
+<td><%=myFormat(p.get("salesAcc").toString()) %></td>
+
+p.get("audiAcc")이건 Object 타입이라 형변환 시켜줘야해.
+
+
+
+

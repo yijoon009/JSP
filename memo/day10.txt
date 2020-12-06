@@ -1,0 +1,54 @@
+jar 임포트하고, java MyJDBCSample.java > member에서 users 테이블 만들어 > java User class > java Korea class > jsp day10_index > jsp crud 같 은거 만들고 > jsp insert_p > update_p > jsp day11_01_el > 
+
+
+=======================
+ip+포트+프로토콜 = url
+======================
+"http://127.0.0.1:3555/korea",이건 웹서버 호출
+"jdbc:mariadb://127.0.0.1:3555/korea", 이건 마리아에 호출
+=======================
+char(10)은 a입력하면 뒤에 띄어쓰기 9개 들어가는데
+varchar(10)은 a입력하면 a 하나만 들어가
+======================
+primary key : 중복안돼, null 안돼
+unique key : 중복안돼, null 돼
+
+====================
+rs는 맨처음 행부터 커서
+id, user_id 이부분부터 커서를 대고있어. 그것도 테이블이야.
+
+======================
+객체지향 3대대장
+캡슐화, 상속, 다형성
+======================
+
+//PreparedStatement: sql을 작성하는데 사용되는 객체
+// ?로 데이터를 바인딩 시킬 수 있는 문법을 가지고 있다.
+
+
+//ResultSet: select문으로 질의(sql)에 성공한 경우 결과물을 담고 있는 객체
+//ResultSet은 sql에 의해서 생성된 테이블의 정보를 담고 있다.
+
+
+사용자 수정 : connection, preparedstatement
+사용자 단건조회 : connection, preparedStatement, resultSet
+사용자 전체조회 : connection, preparedStatement, resultSet
+사용자 가입 : connection, preparedStatement
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,140 @@
+서블렛 randomInmg > jsp RandomImg > jsp day03_1_page>jsp day03_3_html > file my.css
+
+
+day03_1_page.jsp 먼저 만들고 그담에 전송해서 404 나오고 거기서 나온 day03_2_process.jsp이걸 복사해서 만들어. 이게 오타를 줄여줘
+
+================================
+
+뭘 할때마다 '이게 웹이구나'로 느껴야해
+'jsp'구나 'servlet'이구나 하면 안돼!
+
+
+서블릿 호출하면 @WebServlet("/RandomImg")
+이 url로 접속하면 서블릿 안에 
+
+자바는 플랫폼
+jsp 서블렛
+
+헤더에 브랜드 
+바디는 사이즈
+
+==============================
+
+<title>: 크롬 탭부분에 글 나오는 부분
+<div>a b</div>: a b
+<div>a           b</div>: a b
+&nbsp;	: 강제 띄어쓰기로 간주
+&gt;	: <
+http://localhost:18888/myday03/RandomImg
+
+? 뒤에부분을 쿼리스트링 queryString
+
+?name=korea
+&age=10
+  |
+  |
+  ↓
+<header>
+
+<body>
+name=korea
+age=10
+
+
+//get은 바디부분을 쓰지 않아.
+
+
+
+=뒤에는 value가 넘어가는구나
+
+여기서 &gt;랑 &age랑 &엔트로피 구별 못해. 네트워크에서 오류나
+변형이 따로 존재한다.
+
+=============================
+
+드래그가 한글자 단위로 되면 글자
+안되면 이미지
+
+==============================
+out.println("<img src='data:image/jpeg;base64,/9j/4....Qisfaa/9k='/>");
+
+img src = 에 원래 ""로 구별해주는데 이미 자바에서 ""를 쓰고있어서
+''로 해줘
+
+<p></p>도 한 line 띄어주는거
+
+==============================
+
+jsp파일에서 분명 코드는 되는데 왜 오류나지? 싶으면 jsp는 html전문이니까 java 잘 몰라. 그냥 창 껐다가 다시 키면 돼.
+
+==============================
+
+클라이언트 쪽에서 html보여줘
+
+EUC-KR: 한글 적용 
+
+===============================
+<input type="submit" /> : 내용전달까지 포함
+<input type="button" /> : 그냥 모양만 버튼이야
+
+================================
+
+<input>만 보내기 기능 있어!!!!!!!
+그런데 select는 유일하게 input없지만 보내기 기능 있어.
+
+================================
+option은 select의 자식태그야.
+값 보낼땐 select에 속성해야해
+
+===============================
+태그와 태그사이는 value아니야 text야
+
+==============================
+이름 입력: <input type="text" name="name" value="korea"/>
+여기서 value는 값을 가지고 있어.
+즉 새로고침할때 저 인풋공간에 korea라고 항상 써져있어.
+
+==============================
+
+<option value="red" selected="selected">빨강색</option>
+
+selected : 미리 선택되서 제일 처음 보여줄때
+
+=====================
+<div>랑 <br/>은 다 한칸씩 띄어져있어
+<span>은 안내려가
+
+=======================
+<a href="https://www.naver.com/">a 태그는 링크입니다. 링크는 href라는 속성을 이용합니다.</a>
+
+내 페이지 자체이동
+
+<a href="https://www.naver.com/" target="_blank">a 태그는 링크입니다. 링크는 href라는 속성을 이용합니다.</a>
+
+새 페이지가 열림
+
+====================
+<style type="text/css">
+td {
+	color:black;
+}
+</style>
+이건 색상 이런거니까 head 에 넣어야해
+
+
+
+=======================
+a링크는 바디에 있는거고
+link링크는 세으데 css연결해주는거
+
+=======================
+자바스크립트에서 document는 화면에 보이는 전체
+
+document.getElementById: id는 중복 안되니까 s안붙여도되는데
+document.getElementsByName: name은 여러개니까 elements에 s붙여야해
+
+========================
+캡슐화는 어덯게 접근?
+private로 선언해서 getter,setter로만 접근시키게 하는거
+
+

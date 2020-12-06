@@ -1,0 +1,40 @@
+simple json 다운받고 > jsp day08_1_json.jsp > jsp day08_1_json_page.jsp > java PersonBean.java > jsp day08_2_beans  > jsp day08_3_beans > jsp day08_4_beans > jsp day08_5_beans_form > jsp day08_5_beans_page.jsp > jsp day08_5_beans_login_form > jsp day08_5_beans_login_page > jsp day08_6_poll_form.jsp  > java PoolBean > 
+
+
+==============================
+var myJson = JSON.stringify(myObj);
+이런게 직렬화
+============================
+myObj.age =  Integer.parseInt(String.valueOf(obj.get("age")));
+
+obj.get("age") 이건 오브젝트
+String.valueOf(obj.get("age")) 스트링으로 만들고
+Integer.parseInt(String.valueOf(obj.get("age"))); 정수화
+
+
+=====================
+_page는 서버측에서 처리하는 페이지
+_form은 데이터 입력받고 전송하는 페이지
+
+======================
+type = radio
+버튼이 동그라미, 중복투표 불가
+type = check
+버튼이 네모, 중복투표 가능
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

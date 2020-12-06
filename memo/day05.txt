@@ -1,0 +1,87 @@
+jsp day05_1_cookie_set > jsp day05_1_cookie_get.jsp > jsp day05_2_session_set > jsp day05_2_session_get > jsp day05_2_session_remove > jsp day05_0_gugudan > jsp day05_3_application_set > jsp day05_3_application_get > jsp day05_3_request_set > jsp day05_3_request_get.jsp > jsp day05_4_request_set.jsp > jsp day05_4_request_get.jsp > cookie 폴더 만들어서 그 안에 jsp jsp_cookie_form > jsp jsp_cookie_page.jsp > 
+
+
+내장 객체범위 request response/out, appl;ication,... 메소드 등등
+
+선언과 객체 생성없이 사용이 가능하다 -> 프레임워크의 대표적 속성
+==========================
+내장 객체는 <% %>스크립트릿 안에서만 사용 가능
+==========================
+
+세션은 브라우저 꺼지면 없어지고
+쿠키는 브라우저 끄면 해당 부르우저에 남아있어
+
+==========================
+
+쿠키가 클라이언트에 저장을 했다고 해도 리퀘스트 요청에 정보를 저장해서 보내는거야 서버에. 
+
+===========================
+페이지 말고 url이 request야.전달될때(response) html로 떨어지는거야
+urㅣ로 해당하는 jsp파일 보내준거 . 쿠키정보 알려면 request에서 뽑아와야해.
+
+==================
+getvalue 맨처음 하면 오류나. 근데 두번째 하면 오류 안나. 최초의 1회에는 에러야. 아무것도 없으니까. 두번째 이상부터는 쿠키 걍 강제로 만들어줘. 삼항연산자로 null인지 아닌지 해서 출력하는게 좋겠찌
+
+getName JSESSIONID
+=====================
+
+55	cc	aa	ff
+A(alpha(투명도)	R	G	B
+=====================
+application 유지, 타 브라우저 가능 
+session 다른 브라우저 안돼. 유지 돼?????????? (a에서 b 페이지로 가는 그 전체)
+request 위에서 쓰는거랑 달라 (a 따로 열고 b 따로 여니까 정보전달이 안되지)
+page 페이지 하나.
+
+request 파라미터 (웹
+request attribvute (
+
+====================
+로그인 요청 페이지
+로그인 처리 페이지
+로그 아웃 페이지cookie이용
+===================
+경로
+--절대적인 주소방식
+좌표값: 127.312121, 99.31222
+http://localhost:18888/myday05/cookie/jsp_cookie_page.jsp?login_id=df&login_pw=
+
+--상대적인 주소방식
+주소: 서울시 역삼동 112-55
+
+<form action="jsp_cookie_page.jsp">
+상대경로야.
+
+=====================
+location.href = "jsp_cookie_form.jsp";
+웹방법
+
+jsp 기본방법 (forward) - .url 남아있어
+
+======================
+서버에서 쿠키는 컨트롤 못해.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

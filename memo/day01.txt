@@ -1,0 +1,36 @@
+좌표 = 주소
+37 / 127 = 역삼역
+127.0.0.1 = localhost
+h	=www.naver.com
+
+200번대 성공
+400번대 클라이언트 에러
+500번대 서버 에러
+
+프로토콜 삼형제 : FTP HTTP SMTP(메일주고받)
+
+
+
+
+was 와 web server 차이점 (면접대비)
+
+mark up <font> 안녕하세요</font>
+mark down *안녕하세요.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
