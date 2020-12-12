@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<script>
+function show(){
+	alert('버튼을 클릭했습니다.');
+}
+</script>
+</head>
+<body>
+	<h2>로그인</h2>
+	<form action="LoginP.jsp" method="post">
+		로그인ID: <input id ="s" name="nm" type="text"/> <br />
+		로그인PW: <input id="s" name="pw" s="123" type="password"/> <br />
+		<input type="submit" value="로그인"/>
+		<input type="button" value="버튼이벤트" onclick="show()"/>
+		<button type="button">버튼태그</button>
+	</form>
+</body>
+</html>

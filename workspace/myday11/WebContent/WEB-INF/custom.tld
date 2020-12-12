@@ -1,0 +1,23 @@
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>2.0</jsp-version>
+	<short-name>Korea TLD</short-name>
+	
+	<tag>
+		<name>Hello</name>
+		<tag-class>day11.HelloTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	
+	
+	<tag>
+		<name>myCustom</name>
+		<tag-class>day11.MyCustomTag</tag-class>
+		<body-content>scriptless</body-content>
+		<attribute>
+			<name>userName</name>
+			<required>true</required>
+		</attribute>
+	</tag>
+	
+</taglib>
