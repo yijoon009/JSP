@@ -1,0 +1,65 @@
+java korea > jsp day11_01_el.jsp > java hellotag >  tld custom >jsp 02_tag > java MyCustomTag > java myFunctionTag > tld myfunction > 프로젝트 우클릭 컨피규어 -> convert to maver finish -> pom.xml 있으면 돼 > https://mvnrepository.com/artifact/org.apache.taglibs/taglibs-standard-impl/1.2.5  복사하고 pom.xml build 태그 위에 dependencies에 붙여넣어 + api도 해서 넣어 buile success 나와야해@ > jsp day11_03_jstl.jsp > 
+
+day12 프로젝트 만들어서 pom.xml 복붙하고 (day11 -> day 12), day10 에있떤 maria 2.7.0 그것도 추가해서 다시 설정해
+
+🔶build success 안뜨면 maven-war-plugin 을 3.0.0으로 버전 낮춰줘.
+🔶맨처음에 컨피규어에서 convert to mavern 해야해 
+🔶메이븐 새로 추가하면(pom.xml) 메이븐 업데이트 하고, clean 하고 instal 하고 실행해야해
+=========================
+
+el표현방식
+
+	같은가? eq
+	다른가? ne not equeal
+	작은가? lt < little
+	큰가? gt > greater
+	작거나 같은가? le little or equal
+	크거나 같은가? ge greater or equal
+
+========================
+//invoke : private에 접근할때 set을 자동으로 해준다.
+========================
+<body-content>scriptless</body-content>body안에 인자가 있따. 처리하겠다 라는 의미
+<required>true</required>: 필수값이냐? ㅇㅇ필수값
+
+=========================
+<ex:Hello /> <br/>
+	<br/>
+	<ex:myCustom userName="korea">님 안녕하세요</ex:myCustom>
+	<ex:myCustom userName="코리아">님 안녕하세요</ex:myCustom>
+	<div>
+	10+10의 결과는 : ${myf:plus(10,10) }<br/>
+	10*10의 결과는 : ${myf:multiple(10,10) }<br/>
+	</div>
+
+메서드는 <tag>로 만든게 아니니까 꺽새 아니라 el표현식으로 작성해야해.
+=========================
+
+외부라이브러리
+ -jsom
+ -jdbc
+ -jstl
+ -...
+
+외부 라이브러리 관리 플러그
+: ant build -> maven(and + 프로젝트 관리) -> gradle(maven + 프로젝트 관리)
+
+maven
+ -종속성 관리
+ -a.jar 내부에 a-1.jar 필요한 경우
+    : a.jar만 포함하며 자동으로 a-1.jar는 maven이 포함해준다.
+
+=========================
+<c:otherwise>
+			<p style
+		
+		</c:otherwise>
+이부분은 switch문의 default
+
+
+
+
+
+
+
+

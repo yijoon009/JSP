@@ -12,3 +12,6 @@ INSERT INTO users(user_id, PASSWORD, user_name) VALUES (?,?,?)
 
 #데이터조회
 SELECT * FROM users WHERE user_id = ?
+
+#데이터삭제
+DELETE FROM users WHERE user_id = 'hehe'
