@@ -1,0 +1,22 @@
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>2.0</jsp-version>
+	<short-name>my function TLD</short-name>
+
+	<function>
+		<name>plus</name>
+		<function-class>day11.MyFunctionTag</function-class>
+		<function-signature>
+		java.lang.Integer plus(java.lang.Integer, java.lang.Integer)
+		</function-signature>
+	</function>
+	
+	<function>
+		<name>multiple</name>
+		<function-class>day11.MyFunctionTag</function-class>
+		<function-signature>
+		java.lang.Integer multiple(java.lang.Integer, java.lang.Integer)
+		</function-signature>
+	</function>
+
+</taglib>

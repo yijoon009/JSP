@@ -26,7 +26,7 @@ public class MyJDBCSample {
 			con = DriverManager.getConnection(url, id, pass);
 			String sql = "DELETE FROM users WHERE id = ?";
 			pstmt = con.prepareStatement(sql);
-			pstmt.setString(1, user.getUserId());
+			pstmt.setInt(1, user.getId());
 			
 			rows = pstmt.executeUpdate();
 			

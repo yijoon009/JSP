@@ -25,9 +25,10 @@ List<User> list = jdbcSample.selectUser();
 		<tr>
 			
 			<td>
-			<a href = '10_jdbc_delete_p.jsp?id=<%=u.getId()%>'>
-			<%=u.getId() %></td>
+			<a href = "10_jdbc_delete_p.jsp?id=<%=u.getId() %>">
+			<%=u.getId() %>
 			</a>
+			</td>
 			<td>
 				<a href = '10_jdbc_update.jsp?userId=<%=u.getUserId()%>'>
 				<%=u.getUserId() %>

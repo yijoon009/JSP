@@ -1,12 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>day11</groupId>
-  <artifactId>day11</artifactId>
+  <groupId>prac</groupId>
+  <artifactId>day12</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   
   <dependencies>
-  <!-- https://mvnrepository.com/artifact/org.apache.taglibs/taglibs-standard-impl -->
+  	<!-- https://mvnrepository.com/artifact/org.apache.taglibs/taglibs-standard-impl -->
 	<dependency>
 	    <groupId>org.apache.taglibs</groupId>
 	    <artifactId>taglibs-standard-impl</artifactId>
@@ -39,6 +39,14 @@
 	    <artifactId>jsp-api</artifactId>
 	    <version>2.1</version>
 	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.mariadb.jdbc/mariadb-java-client -->
+	<dependency>
+	    <groupId>org.mariadb.jdbc</groupId>
+	    <artifactId>mariadb-java-client</artifactId>
+	    <version>2.7.0</version>
+	</dependency>
+	
 
 	
 	
