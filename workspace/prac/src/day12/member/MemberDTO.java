@@ -8,9 +8,10 @@ public class MemberDTO implements Serializable{
 	
 	private Long id;
 	private String userId;
-	private String userPass;
+	private String userPw;
 	private String userEmail;
-	private String userAuthCheck;
+	private Boolean userAuthCheck;
+	
 	public Long getId() {
 		return id;
 	}
@@ -23,11 +24,11 @@ public class MemberDTO implements Serializable{
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getUserPass() {
-		return userPass;
+	public String getUserPw() {
+		return userPw;
 	}
-	public void setUserPass(String userPass) {
-		this.userPass = userPass;
+	public void setUserPw(String userPw) {
+		this.userPw = userPw;
 	}
 	public String getUserEmail() {
 		return userEmail;
@@ -35,15 +36,15 @@ public class MemberDTO implements Serializable{
 	public void setUserEmail(String userEmail) {
 		this.userEmail = userEmail;
 	}
-	public String getUserAuthCheck() {
+	public Boolean getUserAuthCheck() {
 		return userAuthCheck;
 	}
-	public void setUserAuthCheck(String userAuthCheck) {
+	public void setUserAuthCheck(Boolean userAuthCheck) {
 		this.userAuthCheck = userAuthCheck;
 	}
 	@Override
 	public String toString() {
-		return "MemberDTO [id=" + id + ", userId=" + userId + ", userPass=" + userPass + ", userEmail=" + userEmail
+		return "MemberDTO [id=" + id + ", userId=" + userId + ", userPw=" + userPw + ", userEmail=" + userEmail
 				+ ", userAuthCheck=" + userAuthCheck + "]";
 	}
 	

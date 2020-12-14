@@ -11,3 +11,12 @@ CREATE TABLE member(
 	,UNIQUE KEY(user_email)
 
 )
+
+#데이터 입력
+INSERT INTO member(user_id,user_pass,user_email,user_auth_check)
+VALUES('test','1234','test@email.com',FALSE)
+
+
+
+
+

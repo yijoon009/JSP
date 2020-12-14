@@ -1,17 +1,82 @@
-jsp index > 인덱스별로 f.jsp 만들고 > hei 들어가서 WCDI 
+jsp index > 인덱스별로 f.jsp 만들고 > hei 들어가서 WCDI  > java memberDTO > jsp join_f > jsp join_p > java DBConUtil > java memberDAO > jsp login_f > 
 
 
 day12 프로젝트 만들어서 pom.xml 복붙하고 (day11 -> day 12), day10 에있떤 maria 2.7.0 그것도 추가해서 다시 설정해
 
+====================
+implements Serializable
+서버 이중화 할때 없으면 무조건 오류나 
+==================
+부트스트랩은 태그 안에 class 여기랑만 관련있어.
+태그 아니야.
+===================
+<label for = 'userId'>유저 ID</label>
+<input type='text' class = 'form-control' id = 'userId' name = 'userId' placeholder="아이디를 입력해주세요."/>
+
+label for 속성에 id 넣어놓으면 클릭하면 빈칸을 클릭한거랑 동일해져. 중복없ㅇ id로 해야해
+
+==================
+<script>
+//제이쿼리 사용(클라이언트 자원에서 사용)
+//$()
+//$( function 함수명(){} )
+//거의 익명객체 사용
+
+//이건 서버에서 하는거야 el 표현식
+//${}
 
 
+=====================
 
+	document.getElementById('userId').value;
+	document. 이 $이거야	
 
+	$(getElementById('userId').value;)
 
+---------
+//document.getElementById('userId').value;
+	//$('#userId')
 
+--------
+document.getElementById('userId')
+==
+$('#userId' 
+========================
+//joinBtn 클릭한다면
+	// - 실습하기 a를 화면에 alert창으로 보여주세요
+	$( '#joinBtn' ).click( function(){
+		alert('a');
+	} );
 
+=======================
+$( '#userId').val() 이게 get이고
+$( '#userId').val('test') 이게 set 이야.
 
+=====================
 
+//key값이 role인걸 가져와주세요.
+//그냥하면 조회
+//console.log( $('#myform').attr('role') )
+			
+//값을 넣으면 변경/지정
+method를 post로 지정
+$( '#myform').attr('method','post');
+액션을 join_p로 지정
+$( '#myform').attr('action','./join_p.jsp');
+
+===================
+
+다형성은 시크니쳐는 아니야
+시그니쳐는 리턴값까지 포함이야.
+(day11)
+====================
+
+DTransferO(model)
+varchar -> string
+char(1) -> boolean
+
+DAO(control)
+sql문 나오고
 
 
 

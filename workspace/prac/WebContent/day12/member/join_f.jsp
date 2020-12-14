@@ -53,6 +53,7 @@ $(function (){
 		if($('#userPw').val() != $('#userPwCheck').val()) {
 			state = false;
 			msg = '비밀번호와 비밀번호 체크의 값이 틀립니다.';
+			$('#userPw').focus();
 		}
 		//state 값에 따라서 전송 하기
 		if(state) {
