@@ -61,7 +61,7 @@ $(function(){
 						<label for="userId">유저 ID</label> <input type="text" class="form-control" id="userId" name="userId" placeholder="아이디를 입력해주세요." />
 					</div>
 					<div class="form-group">
-						<label for="userPw">비밀번호</label> <input type="text" class="form-control" id="userPw" name="userPw" placeholder="아이디를 입력해주세요." />
+						<label for="userPw">비밀번호</label> <input type="text" class="form-control" id="userPw" name="userPw" placeholder="비밀번호를 입력해주세요." />
 					</div>
 
 					<div class="form-group text-center">
