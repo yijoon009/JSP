@@ -1,4 +1,4 @@
-package myday12.member;
+package day12.member;
 
 import java.io.Serializable;
 
