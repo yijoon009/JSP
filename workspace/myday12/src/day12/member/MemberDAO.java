@@ -69,12 +69,11 @@ public class MemberDAO {
 /*
 Connection conn = null;
 PreparedStatement ps = null;
-boolean state = false;
 
 try {
 	conn = DBConUtil.getConnection();
 	
-} catch (Exception e) {;}
+} catch (Exception e) {e.printStackTrace();}
 finally {
 	DBConUtil.close(conn, ps);
 }
