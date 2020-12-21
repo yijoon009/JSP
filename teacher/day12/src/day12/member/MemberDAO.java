@@ -29,10 +29,8 @@ public class MemberDAO {
 			if(rs.next()) {
 				state = true;
 			}
-			
-			//todo..
 		} catch(Exception e) {
-			
+			e.printStackTrace();
 		} finally {
 			DBConUtil.close(conn, ps, rs);
 		}
@@ -62,7 +60,7 @@ public class MemberDAO {
 			
 			//todo..
 		} catch(Exception e) {
-			
+			e.printStackTrace();
 		} finally {
 			DBConUtil.close(conn, ps);
 		}
@@ -82,7 +80,7 @@ public class MemberDAO {
 		//todo..
 		//todo..
 	} catch(Exception e) {
-		
+		e.printStackTrace();
 	} finally {
 		DBConUtil.close(conn, ps);
 	}

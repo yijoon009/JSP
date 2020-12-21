@@ -151,7 +151,7 @@ public class MyJDBCSample {
 	}
 	
 	
-	
+	//사용자 추가
 	public int insertUser(User user) {
 		Connection con = null;
 		PreparedStatement pstmt = null;

@@ -12,7 +12,7 @@ if(result){
 %>
 <script>
 alert('회원가입 성공')
-location.herf = 'login_f.jsp';
+location.herf = './login_f.jsp';
 </script>
 
 <%}else{
@@ -20,7 +20,7 @@ location.herf = 'login_f.jsp';
 
 	
 <script>
-alert('회원가입 성공')
+alert('회원가입 실패')
 location.herf = 'join_f.jsp';
 </script>
 

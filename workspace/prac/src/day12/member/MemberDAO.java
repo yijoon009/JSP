@@ -46,7 +46,7 @@ public class MemberDAO {
 		
 		try {
 			conn = DBConUtil.getConnection();
-			String sql = " INSERT INTO member(user_id, user_pass, user_email, user_auth_check) " + 
+			String sql = " INSERT INTO member(user_id, user_pw, user_email, user_auth_check) " + 
 					 " VALUES(?, ?, ?, ?) ";
 			ps = conn.prepareStatement(sql);
 			ps.setString(1, memberDTO.getUserId());
@@ -57,7 +57,12 @@ public class MemberDAO {
 			
 			//데이터베이스 잘 입력된거 rows == 1
 			state = (rows==1);
-		} catch (Exception e) {;}
+			System.out.println("데이터 연결 성공");
+		} catch (Exception e) {
+			System.out.println("데이터 연결 실패");
+			System.out.println(e.getMessage());
+			
+		}
 		finally {
 			DBConUtil.close(conn, ps);
 		}

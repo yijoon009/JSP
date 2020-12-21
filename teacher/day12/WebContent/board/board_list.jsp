@@ -1,6 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> 
+<jsp:useBean id="boardDAO" class="day12.board.BoardDAO" />
+
+<c:set var="boardAuth" value="false" />
+
+<!-- type이 Auth이면서 로그인이 되었다면 -->
+<c:if test="${param.type eq 'Auth' and !empty loginId}">
+	<c:set var="boardAuth" value="true" />
+</c:if>
+
+<c:set var="boardList" value="${boardDAO.selectBoard(boardAuth) }" />
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,14 +23,36 @@
 
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
+<script>
+$(function(){
+	//로그인 버튼 클릭하면
+	$('#loginBtn').click(function(){
+		location.href="../member/login_f.jsp";
+	});
+	
+	//인증게시판 버튼을 클릭하면
+	$('#authBtn').click(function(){
+		location.href="./board_list.jsp?type=Auth";
+	});
+	
+	//자유게시판 버튼을 클릭하면
+	$('#freeBtn').click(function(){
+		location.href="./board_list.jsp?type=Free";
+	})
+	
+	//로그아웃 버튼을 클릭하면
+	$('#logOutBtn').click(function(){
+		location.href="../member/logout.jsp";
+	})
+})
+
+</script>
+
 </head>
 <body>
 
-	<c:set var="boardAuth" value="false" />
-	<!-- type이 Auth이면서 로그인이 되었다면 -->
-	<c:if test="${param.type eq 'Auth' and !empty loginId}">
-		<c:set var="boardAuth" value="true" />
-	</c:if>
+	
 
 
 
@@ -38,9 +71,7 @@
 					<c:if test="${empty loginId}">
 					
 					<div class="navbar-collapse collapse" id="navbar-main">
-						<form class="navbar-form">
-						
-						</form>
+						자유게시판 <button class="btn btn-primary" id="loginBtn">로그인</button>
 					</div>
 					
 					
@@ -50,7 +81,9 @@
 					<c:if test="${!empty loginId}">
 					
 					<div class="navbar-collapse collapse" id="navbar-main">
-						//로그인 아이디 표시
+						자유게시판 
+						<button class="btn btn-info" id="logOutBtn">로그아웃</button>
+						<button class="btn btn-default" id="authBtn">인증게시판</button>
 					</div>
 					
 					</c:if>
@@ -61,7 +94,9 @@
 				<c:if test="${boardAuth eq true }">
 				
 				<div class="navbar-collapse collapse" id="navbar-main">
-					//로그인 아이디 표시
+					인증게시판
+					<button class="btn btn-info" id="logOutBtn">로그아웃</button>
+					<button class="btn btn-default" id="freeBtn">자유게시판</button>
 				</div>
 				
 				</c:if>
@@ -106,18 +141,28 @@
 			</thead>
 			<tbody>				
 				
+				<c:forEach var="item" items="${boardList}">
 				<tr>
-					<td style="text-align:center;"></td>
-					<td></td>
-					<td style="text-align:center;"></td>
-					<td style="text-align:center;"></td>
-					<td style="text-align:center;"></td>
+					<td style="text-align:center;">${item.id }</td>
+					<td>
+						<a href="./board_detail.jsp?id=${item.id }">
+						${item.title }
+						</a>					
+					</td>
+					<td style="text-align:center;">${item.createId }</td>
+					<td style="text-align:center;">${item.createDate }</td>
+					<td style="text-align:center;">${item.hit }</td>
 				</tr>
+				</c:forEach>
 				
 			</tbody>
 		</table>
-		<div><a href="./board_insert.jsp?type=Auth" class="btn btn-default pull-right">인증글쓰기</a></div>
-		<div><a href="./board_insert.jsp?type=Free" class="btn btn-success pull-right">자유글쓰기</a></div>
+		<c:if test="${boardAuth eq true}">
+			<div><a href="./board_insert.jsp?type=Auth" class="btn btn-default pull-right">인증글쓰기</a></div>
+		</c:if>
+		<c:if test="${boardAuth eq false}">
+			<div><a href="./board_insert.jsp?type=Free" class="btn btn-success pull-right">자유글쓰기</a></div>
+		</c:if>
 		
 		
 	</div>
