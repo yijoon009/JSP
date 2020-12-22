@@ -1,4 +1,4 @@
-jsp upload_f > 메이븐 전환 > com maver 추가, servlet 추가 > 
+jsp upload_f > 메이븐 전환 > com maver 추가, servlet 추가 > jsp upload_p > 
 
 
 MultipartRequest mutl = new MultipartRequest(request, 저장할 곳, 최대크기, 포맷(캐릭터));

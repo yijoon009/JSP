@@ -31,7 +31,7 @@ $(function(){
 	//삭제하기
 	$('#deleteBtn').click(function() {
 		if(confirm('데이터를 삭제하시겠습니까?')) {
-			location.href="./board_delete_p.jsp?id=${boardDTO.id}";
+			location.href="./board_delete_p.jsp?id=${boardDTO.id}&type=${param.type}";
 		}		
 	});
 	

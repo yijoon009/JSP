@@ -104,7 +104,7 @@ $(function(){
 						<div class="form-group">
 							<label for="pass">게시글 비밀번호</label> 
 							<input type="text" class="form-control" name="boardPass" 
-								id="pass" placeholder="Enter password">
+								id="pass" placeholder="Enter password" >
 						</div>
 					</div>	 
 				</div>
