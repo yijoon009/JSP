@@ -1,0 +1,46 @@
+jsp upload_f > 메이븐 전환 > com maver 추가, servlet 추가 > jsp upload_p > ftp filezilla 다운 > user 'korea'로 설정함 pw해도되고 안해도되고 > jsp download > web content 안에 files (물리적으로)
+
+
+
+
+MultipartRequest mutl = new MultipartRequest(request, 저장할 곳, 최대크기, 포맷(캐릭터));
+================
+
+MultipartRequest multi = new MultipartRequest(request, savePath, maxSize, format, new DefaultFileRenamePolicy());
+new DefaultFileRenamePolicy(): 중복된 파일명이 들어왔을때 자동으로 처리해주는 메소드
+
+===============
+ftp http 둘다 파일 업로드 가능. 
+ftp는 파일 전송 전용으로 만들어놓은것 뿐
+
+===============
+파일질라 삭제해
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

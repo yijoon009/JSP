@@ -1,0 +1,48 @@
+dynamic myday15 > pom cos꺼 변경(중복이면 1 2 이렇게 되어야해) > folder type > jsp upload_f > jsp upload_p > java FileService > java filedto > java jdbc 복붙해 > java filddao > jsp fildList > 
+
+
+
+
+
+
+==============
+<c:forEach var = "item" item = "${fileList }" varStatus="status">
+var : 변수
+item : 리스트들
+varStatus : 반복문이 반복되는 숫자를 세는 속성
+1 2 3 4  에서 3 빼면 1 2  3 으로 저장해줘
+
+=================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
