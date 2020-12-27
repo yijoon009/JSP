@@ -21,8 +21,18 @@
 			</tr>
 			<c:forEach var = "item" items = "${fileList }" varStatus="status">
 				<tr>
-					<td>${status.count }</td>				
-					<td>${item.fileOrigName }</td>				
+					<td>${status.count }</td>	
+					
+					<c:url var = "downUrl" value = "./filedown.jsp">
+						<c:param name="filePath">${item.filePath }</c:param>
+						<c:param name="fileOrigName">${item.fileOrigName }</c:param>
+					</c:url>			
+					<td>
+					<a href = "${downUrl }">
+					${item.fileOrigName }
+					</a>
+					</td>				
+					
 					<td>${item.name }</td>				
 				</tr>
 			</c:forEach>

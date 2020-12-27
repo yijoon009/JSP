@@ -1,0 +1,29 @@
+maven 전환 > folder basic > folder안에 html gugudan > servlet gugudancontroller > jsp result > java GugudanSErvice > db join_user 생성 > java korea.join안에 joinDTO > folder join > jsp join_f > 
+
+
+
+mapper namespace : html의 id와 비슷, 유일성 가짐
+================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

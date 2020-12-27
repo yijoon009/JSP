@@ -1,4 +1,4 @@
-dynamic myday15 > pom cos꺼 변경(중복이면 1 2 이렇게 되어야해) > folder type > jsp upload_f > jsp upload_p > java FileService > java filedto > java jdbc 복붙해 > java filddao > jsp fildList > 
+dynamic myday15 > pom cos꺼 변경(중복이면 1 2 이렇게 되어야해) > folder type > jsp upload_f > jsp upload_p > java FileService > java filedto > java jdbc 복붙해 > java filddao > jsp fildList > jsp filedown 받아와서 복붙 > folder mvc > mvc 안에 jsp model1 > mvc 안에 jsp model2 > servlet mvcController > 
 
 
 
@@ -13,6 +13,19 @@ varStatus : 반복문이 반복되는 숫자를 세는 속성
 1 2 3 4  에서 3 빼면 1 2  3 으로 저장해줘
 
 =================
+<c:url var = "downUrl" value = "./filedown.jsp">
+						<c:param name="filePath">${item.filePath }</c:param>
+						<c:param name="fileOrigName">${item.fileOrigName }</c:param>
+					</c:url>			
+					<td>
+					<a href = "${downUrl }">
+					${item.fileOrigName }
+					</a>
+					</td>				
+
+: 특수문자 포함인 경우 el식 표현으로 해야한다.
+a href = "" 바로 해버리면 안돼
+==================
 
 
 
