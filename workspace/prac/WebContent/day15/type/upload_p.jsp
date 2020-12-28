@@ -30,6 +30,8 @@ try{
 	FileService fs = new FileService();
 	fs.fileUpload(name, file);
 	
+	//파일리스트로 이동
+	response.sendRedirect("./fileList.jsp");
 	
 	
 }catch(Exception e){
