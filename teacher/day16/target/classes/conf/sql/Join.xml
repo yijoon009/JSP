@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  
+<mapper namespace="korea.join.JoinMapper">
+	
+	<insert id="saveJoin" parameterType="korea.join.JoinDTO">
+	INSERT INTO join_user(user_id, user_pw) VALUES(#{userId}, #{userPw})
+	</insert>
+	
+	<select id="selectJoin" resultType="korea.join.JoinDTO">
+	SELECT * FROM join_user
+	</select>
+
+</mapper>

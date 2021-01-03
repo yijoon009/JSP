@@ -1,10 +1,24 @@
-maven 전환 > folder basic > folder안에 html gugudan > servlet gugudancontroller > jsp result > java GugudanSErvice > db join_user 생성 > java korea.join안에 joinDTO > folder join > jsp join_f > 
+maven 전환 > folder basic > folder안에 html gugudan > servlet gugudancontroller > jsp result > java GugudanSErvice > db join_user 생성 > java korea.join안에 joinDTO > folder join > jsp join_f > servlet joinController > jsp list > java joinDAO > java jo ice > 마이바티스 pom 삽입 > java SqlMapConfig > xml SqlMapConfig > xml join > sqlmapconfig.xml에 마이바티스 복붙 > 
 
 
 
 mapper namespace : html의 id와 비슷, 유일성 가짐
+namespace 안에 통상 관리하는 package 작성 
 ================
+gugudanController 생성자 안에 gugudanService 객체 생성 해주는 방식 : dependency injection(DI)방식
+(생성자 주입법)
+================
+보내는 곳에서는(join_f) 서블렛을 
+<form action = "./join.do" method = "post">
+join.do라고 명시하고
 
+받는 곳에서는(JoinController.java)
+@WebServlet("/day16/join/join.do")
+이걸 호출한 파일 경로를 적어줘
+=================
+sqlMapconfig.xml은 데이터베이스 연결 
+(아래 mapper에 연결시켜줄 mapper 작성/여러개 가능(join용 member용 board용 등등,,)
+join.xml은 실질적 메소드 구현
 
 
 

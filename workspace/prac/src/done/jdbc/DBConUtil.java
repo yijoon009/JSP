@@ -5,6 +5,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import org.mariadb.jdbc.Driver;
+
 public class DBConUtil {
 	
 	//어플리케이션 종료되기 전까지 메모리에 상주
@@ -17,6 +19,7 @@ public class DBConUtil {
 		String url = "jdbc:mariadb://127.0.0.1:3555/wcdi";
 		String id = "root";
 		String pass = "0000";
+		
 		
 		Class.forName("org.mariadb.jdbc.Driver");
 		conn = DriverManager.getConnection(url,id,pass);

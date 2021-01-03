@@ -1,4 +1,4 @@
-dynamic myday15 > pom cos꺼 변경(중복이면 1 2 이렇게 되어야해) > folder type > jsp upload_f > jsp upload_p > java FileService > java filedto > java jdbc 복붙해 > java filddao > jsp fildList > jsp filedown 받아와서 복붙 > folder mvc > mvc 안에 jsp model1 > mvc 안에 jsp model2 > servlet mvcController > 
+dynamic myday15 > pom cos꺼 변경(중복이면 1 2 이렇게 되어야해) > folder type > jsp upload_f > jsp upload_p > java FileService > java filedto > java jdbc 복붙해 > java filddao > jsp fildList > jsp filedown 받아와서 복붙 > folder mvc > mvc 안에 jsp model1 > mvc 안에 jsp model2 > servlet korea 안에 MvcController
 
 
 
